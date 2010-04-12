@@ -1,0 +1,69 @@
+/*
+  A theme inspired by ir_black (http://blog.infinitered.com/entries/show/2)
+  @author Jeff Schoolcraft
+  @description ir_blackish
+
+  The following are the preferred 16 colors for your terminal
+            Colors      Bright Colors
+  Black     #4E4E4E     #7C7C7C
+  Red       #FF6C60     #FFB6B0
+  Green     #A8FF60     #CEFFAB
+  Yellow    #FFFFB6     #FFFFCB
+  Blue      #96CBFE     #FFFFCB
+  Magenta   #FF73FD     #FF9CFE
+  Cyan      #C6C5FE     #DFDFFE
+  White     #EEEEEE     #FFFFFF
+
+*/
+
+html {
+  font-family: 'Monaco';
+  font-size: 9pt;
+  background-color: #000;
+  color: #EEEEEE;
+}
+
+body {}
+
+.url { color: #FF73FD; }
+.address {}
+.highlight {
+  font-weight: normal;
+  color: #7C7C7C;
+  background-color: #FFFFB6;
+}
+
+.line {}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+
+.line[highlight=true] {
+  background-color: #FFFFB6;
+  color: #7C7C7C;
+}
+
+/* Handle the overload of non important messages by ignoring them */
+.line[type=join], .line[type=part], .line[type=quit] { display: none; }
+
+.time { color: #96CBFE; }
+.place { color: #96CBFE; }
+
+.sender[type=normal] { color: #96CBFE; }
+.sender[type=myself] { color: #DFDFFE; }
+
+.message[type=privmsg] {}
+.message[type=notice] { color: #4E4E4E; }
+.message[type=action] { color: #4E4E4E;}
+
+.message[type=system], .message[type=join], .message[type=part], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=topic], .message[type=invite], .message[type=wallops] {
+  color: #A8FF60;
+}
+.message[type=reply] { color: #509036; }
+
+.message[type=error], .message[type=error_reply] { color: #FF6C60; }
+.message[type=dcc_send_send] { color: #FF6C60; }
+.message[type=dcc_send_receive] { color: #FF6C60; }
+.message[type=debug_send] { color: #FF6C60; }
+.message[type=debug_receive] { color: #FF6C60; }
