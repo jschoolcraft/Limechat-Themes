@@ -1,1 +1,4 @@
 Just a collection of themes for [LimeChat](http://limechat.net/mac/)
+
+Fork and add your theme if you like, [pjammer](http://github.com/pjammer) and I thought it would be cool to have a single repo for all limechat themes.
+
