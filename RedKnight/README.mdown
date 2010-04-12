@@ -1,0 +1,4 @@
+A Limechat theme based on my Textmate theme I've been using for a couple of years now.  
+
+![screenshot](http://github.com/jschoolcraft/Limechat-Themes/raw/master/RedKnight/RedKnight.png)
+![screenshot](http://github.com/pjammer/Limechat-Themes/raw/master/RedKnight/RedKnight.png)
