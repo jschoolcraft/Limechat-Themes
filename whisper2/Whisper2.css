@@ -441,3 +441,7 @@ html[channelname="#aegir"].normal {
 html[channelname="#open_atrium"].normal {
 	background: white url('badges/atrium.png') no-repeat fixed bottom right;
 }
+
+html[channelname="#rvm"].normal {
+	background: white url('badges/rvm.png') no-repeat fixed bottom right;
+}
