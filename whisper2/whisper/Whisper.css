@@ -1,6 +1,7 @@
 html.normal {
     color: #4b4b4b;
     background-color: white;
+	
     font: 12px/1.3em 'Lucida Grande' sans-serif;
     margin: 0;
     padding: 0;
@@ -384,6 +385,8 @@ body.normal .message[type=debug_receive] {
 
 /* Icons/logos for some popular apps/channels */
 
+/* todo: Need to suss out how to make the channel transparent enough to see these */
+
 html[channelname="#limechat"].normal {
 	background: white url('whisper/limechat.png') no-repeat fixed bottom right;
 }
@@ -406,7 +409,10 @@ html[channelname="#growl"].normal {
 html[channelname="#ruby"].normal {
 	background: white url('whisper/ruby.png') no-repeat fixed bottom right;
 }
-html[channelname="#rubyonrails"].normal {
+html[channelname="#RubyOnRails"].normal {
+	background: white url('whisper/rubyonrails.png') no-repeat fixed bottom right;
+}
+html[channelname="#railsbridge"].normal {
 	background: white url('whisper/rubyonrails.png') no-repeat fixed bottom right;
 }
 html[channelname="##apple"].normal {
