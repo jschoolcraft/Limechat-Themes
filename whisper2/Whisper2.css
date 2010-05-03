@@ -388,56 +388,56 @@ body.normal .message[type=debug_receive] {
 /* todo: Need to suss out how to make the channel transparent enough to see these */
 
 html[channelname="#limechat"].normal {
-	background: white url('whisper/limechat.png') no-repeat fixed bottom right;
+	background: white url('badges/limechat.png') no-repeat fixed bottom right;
 }
 
 html[channelname="##textmate"].normal {
-	background: white url('whisper/textmate.png') no-repeat fixed bottom right;
+	background: white url('badges/textmate.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#adium"].normal {
-	background: white url('whisper/adium.png') no-repeat fixed bottom right;
+	background: white url('badges/adium.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#colloquy"].normal {
-	background: white url('whisper/colloquy.png') no-repeat fixed bottom right;
+	background: white url('badges/colloquy.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#growl"].normal {
-	background: white url('whisper/growl.png') no-repeat fixed bottom right;
+	background: white url('badges/growl.png') no-repeat fixed bottom right;
 }
 html[channelname="#ruby"].normal {
-	background: white url('whisper/ruby.png') no-repeat fixed bottom right;
+	background: white url('badges/ruby.png') no-repeat fixed bottom right;
 }
 html[channelname="#RubyOnRails"].normal {
-	background: white url('whisper/rubyonrails.png') no-repeat fixed bottom right;
+	background: white url('badges/rubyonrails.png') no-repeat fixed bottom right;
 }
 html[channelname="#railsbridge"].normal {
-	background: white url('whisper/rubyonrails.png') no-repeat fixed bottom right;
+	background: white url('badges/rubyonrails.png') no-repeat fixed bottom right;
 }
 html[channelname="##apple"].normal {
-	background: white url('whisper/apple.png') no-repeat fixed bottom right;
+	background: white url('badges/apple.png') no-repeat fixed bottom right;
 }
 html[channelname="#python"].normal {
-	background: white url('whisper//python.png') no-repeat fixed bottom right;
+	background: white url('badges/python.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#drupal"].normal {
-	background: white url('whisper/drupal.png') no-repeat fixed bottom right;
+	background: white url('badges/drupal.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#drupal-au"].normal {
-	background: white url('whisper//drupal-au.png') no-repeat fixed bottom right;
+	background: white url('badges/drupal-au.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#drupal-support"].normal {
-	background: white url('whisper/drupal-support.png') no-repeat fixed bottom right;
+	background: white url('badges/drupal-support.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#aegir"].normal {
-	background: white url('whisper//aegir.png') no-repeat fixed bottom right;
+	background: white url('badges/aegir.png') no-repeat fixed bottom right;
 }
 
 html[channelname="#open_atrium"].normal {
-	background: white url('whisper/atrium.png') no-repeat fixed bottom right;
+	background: white url('badges/atrium.png') no-repeat fixed bottom right;
 }
