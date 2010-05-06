@@ -1,0 +1,3 @@
+[submodule "limechat-graphite"]
+	path = limechat-graphite
+	url = http://github.com/gregnewman/limechat-graphite.git
