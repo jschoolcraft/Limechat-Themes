@@ -2,5 +2,14 @@ Just a collection of themes for [LimeChat](http://limechat.net/mac/)
 
 Fork and add your theme if you like, [pjammer](http://github.com/pjammer) and I thought it would be cool to have a single repo for all limechat themes.
 
+Some of the themes are git submodules.
+
+When you git clone or pull, you need to head on over to the directory that you targeted, and execute the following incantations:
+
+ git submodule init
+ git submodule update
+
+that will pull all of the themes down for you.
+
 When you add a theme, drop it into it's own directory. Put symlinks to the css and yaml files in the root. Just check this out to your themes directory, and git pull when you want to update.
 
