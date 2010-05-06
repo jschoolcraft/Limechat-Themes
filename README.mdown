@@ -11,5 +11,7 @@ When you git clone or pull, you need to head on over to the directory that you t
 
 that will pull all of the themes down for you.
 
+TODO: make a rake job to install everything into the limechat themes directory
+
 When you add a theme, drop it into it's own directory. Put symlinks to the css and yaml files in the root. Just check this out to your themes directory, and git pull when you want to update.
 
