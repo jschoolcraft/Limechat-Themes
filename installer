@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#let's make sure we are some place sane
+
+target="~/Library/Application\ Support/LimeChat/"
+whereiam="$(pwd)"
+
+#
+#Check with teh user to make sure this is what they want to do
+
+
+#Do iT!
+
+c
