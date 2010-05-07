@@ -3,14 +3,18 @@ namespace :themes do
   #TODO : make this crap acutally work
   desc 'Create symlinks for all of the themes in the current directory'
   task :linkup do
-    #load the directories
-   # path = unshift("#{File.dirname(__FILE__)}")
-   # Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { 
-   #   |css| 
-   #     FileUtils.ln_s css css   
-   #        }
-   # Dir.glob("#{File.dirname(__FILE__)}/**/*.yaml") { |yaml|   }
-   puts "todo: make this work!"
+    Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |css|
+        newcss = File.basename(css)
+        FileUtils.ln_s css, newcss, :force => true
+        }
+      Dir.glob("#{File.dirname(__FILE__)}/**/*.yaml") { |yaml|
+        newyaml = File.basename(yaml)
+        FileUtils.ln_s yaml, newyaml, :force => true
+        }
+      Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |js|
+        newjs = File.basename(js)
+        FileUtils.ln_s js, newjs, :force => true
+        }
   end
 
   #TODO : make this crap acutally work  
