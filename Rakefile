@@ -1,8 +1,8 @@
 namespace :themes do
   
-  #TODO : make this crap acutally work
   desc 'Create symlinks for all of the themes in the current directory'
   task :linkup do
+    %x[git submodule init && git submodule update]    
     Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |css|
         newcss = File.basename(css)
         FileUtils.ln_s css, newcss, :force => true
@@ -17,7 +17,6 @@ namespace :themes do
         }
   end
 
-  #TODO : make this crap acutally work  
   desc 'Install into the logged in user\'s limechat directory'
   task :install do
     %x[git submodule init && git submodule update]
@@ -30,6 +29,11 @@ namespace :themes do
   desc 'Initalize the directory, loading the submodules'
   task :init do
     %x[git submodule init && git submodule update]
+  end
+  
+  desc 'Update the themes directory'
+  task :update do
+    %x[git pull && git submodule init && git submodule update]
   end
   
 end
