@@ -15,11 +15,17 @@ namespace :themes do
 
   #TODO : make this crap acutally work  
   desc 'Install into the logged in user\'s limechat directory'
-    task :install do
-      source = Dir.getwd + "/."
-      Dir.chdir
-      target = Dir.getwd + '/Library/Application Support/LimeChat/Themes/'
-      FileUtils.cp_r(source, target, :remove_destination => true)
+  task :install do
+    %x[git submodule init && git submodule update]
+    source = Dir.getwd + "/."
+    Dir.chdir
+    target = Dir.getwd + '/Library/Application Support/LimeChat/Themes/'
+    FileUtils.cp_r(source, target, :remove_destination => true)
+  end
+  
+  desc 'Initalize the directory, loading the submodules'
+  task :init do
+    %x[git submodule init && git submodule update]
   end
   
 end
