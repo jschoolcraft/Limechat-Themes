@@ -2,16 +2,18 @@ namespace :themes do
   
   desc 'Create symlinks for all of the themes in the current directory'
   task :linkup do
-    %x[git submodule init && git submodule update]    
+    %x[git submodule init && git submodule update]
+    puts "updates done. linkup starting"
+    #for some reason this is barfing on the css files. try it later    
     Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |css|
         newcss = File.basename(css)
         FileUtils.ln_s css, newcss, :force => true
         }
-      Dir.glob("#{File.dirname(__FILE__)}/**/*.yaml") { |yaml|
+    Dir.glob("#{File.dirname(__FILE__)}/**/*.yaml") { |yaml|
         newyaml = File.basename(yaml)
         FileUtils.ln_s yaml, newyaml, :force => true
         }
-      Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |js|
+    Dir.glob("#{File.dirname(__FILE__)}/**/*.js") { |js|
         newjs = File.basename(js)
         FileUtils.ln_s js, newjs, :force => true
         }
