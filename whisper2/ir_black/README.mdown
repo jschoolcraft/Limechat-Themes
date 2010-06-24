@@ -1,0 +1,3 @@
+Heavily inspired by the entire ir_black series by [Todd Werth](http://blog.infinitered.com/).  Actually it'll be a straight clone once I finish it.
+
+![screenshot](http://github.com/jschoolcraft/Limechat-Themes/raw/master/ir_black/ir_black.png)
