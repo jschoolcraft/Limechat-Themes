@@ -45,7 +45,7 @@ body {}
 /* Handle the overload of non important messages by ignoring them */
 .line[type=join], .line[type=part], .line[type=quit] { display: none; }
 
-.time { color: #96CBFE; }
+.time { color: #FFFFCB; }
 .place { color: #96CBFE; }
 
 .sender[type=normal] { color: #96CBFE; }
