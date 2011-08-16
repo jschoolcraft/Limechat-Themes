@@ -37,3 +37,18 @@
 [submodule "limechat-twilight"]
 	path = limechat-twilight
 	url = http://github.com/blomma/limechat-twilight.git
+[submodule "mosey-limechat-theme"]
+	path = mosey-limechat-theme
+	url = https://github.com/phaedryx/mosey-limechat-theme.git
+[submodule "limechat-theme"]
+	path = limechat-theme
+	url = https://github.com/radar/limechat-theme.git
+[submodule "limechat-themes"]
+	path = limechat-themes
+	url = https://github.com/morepanda/limechat-themes.git
+[submodule "more-panda"]
+	path = more-panda
+	url = https://github.com/morepanda/limechat-themes.git
+[submodule "radar"]
+	path = radar
+	url = https://github.com/radar/limechat-theme.git
