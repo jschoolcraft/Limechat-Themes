@@ -19,9 +19,6 @@
 [submodule "Spring-Night--modified-"]
 	path = Spring-Night--modified-
 	url = http://github.com/halbtuerke/Spring-Night--modified-.git
-[submodule "limate"]
-	path = limate
-	url = http://github.com/florianb/limate.git
 [submodule "Limelight"]
 	path = Limelight
 	url = http://github.com/Soryu/Limelight.git
