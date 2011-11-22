@@ -26,10 +26,18 @@ namespace :themes do
     puts "Moving Files"
     source = Dir.getwd + "/."
     Dir.chdir
-    target = Dir.getwd + '/Library/Application Support/LimeChat/Themes/'
+
+    app_support_base = Dir.getwd + '/Library/Application Support'
+    target = app_support_base + '/net.limechat.LimeChat-AppStore/Themes/' # app store installation dir
+    
+    unless File.directory?(target)
+      target = app_support_base + '/LimeChat/Themes/'
+    end
+    
     FileUtils.cp_r(source, target, :remove_destination => true)
       puts "Setting up Symlinks"
-      Dir.chdir("#{Dir.getwd}/Library/Application Support/LimeChat/Themes/")  
+      puts "Installing themes into #{target}"
+      Dir.chdir(target)  
       Dir.glob("#{File.dirname(__FILE__)}/**/*.css") { |css|
           newcss = File.basename(css)
           FileUtils.ln_s css, newcss, :force => true
