@@ -34,3 +34,6 @@
 [submodule "limechat-twilight"]
 	path = limechat-twilight
 	url = http://github.com/blomma/limechat-twilight.git
+[submodule "limechat-asphalt"]
+	path = limechat-asphalt
+	url = http://github.com/jpfau/limechat-asphalt.git
