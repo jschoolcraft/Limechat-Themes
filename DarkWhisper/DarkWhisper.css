@@ -1,0 +1,488 @@
+html.normal {
+    color: #4b4b4b;
+    background-color: black;
+	
+    font: 12px/1.3em 'Lucida Grande' sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.normal .sender[type=myself]:hover:before {
+    content: "• ";
+    color: #bebebe;
+}
+
+body.normal a img {
+    border: 0;
+}
+
+body.normal img {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    max-width: 95%;
+}
+
+body.normal a:link, a:visited, a:hover, a:active {
+    color: #a5bbcf;
+    text-decoration: none;
+}
+
+body.normal a:hover {
+	text-decoration: underline;
+}
+
+body.normal .text span {
+    display: block;
+}
+
+body.normal .text span span {
+	display: inline;
+}
+
+body.normal .line {
+    padding: 0;
+    margin: 0;
+    background-color: #2c3236;
+    line-height: 130%;
+}
+
+body.normal .event {
+    padding: 0.2em;
+    margin: 0;
+    color: #363636;
+    background: #274259;
+    border-top: solid 1px #315371;
+    border-bottom: solid 1px #315371;
+}
+
+body.normal .event + .event {
+    border-top: none;
+    border-bottom: solid 1px #315371;
+}
+
+body.normal .text span.message {
+    border-bottom: #222 1px solid;
+}
+
+body.normal .text + .event {
+    margin-top: -px;
+}
+
+body.normal .sender {
+    padding: 0.4em 0;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    width: 92px;
+    overflow: hidden;
+}
+
+body.normal .line .message {
+    margin: 0 0 0 134px;
+    padding: 0.4em;
+    color: #eee;
+    border-left: 1px solid #777;
+    background-color: #000;
+}
+
+body.normal .event .message {
+    margin: 0;
+    padding: 0.4em;
+    border: 0;
+    color: #a6b9c0;
+    background: none;
+    font: bold 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+body.normal .line .time {
+    float: left;
+    margin-right: 6px;
+    margin-top: 5px;
+    margin-left: 4px;
+    color: #999;
+    font: bold 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+body.normal .line .place {
+    display: block;
+    color: #999;
+    margin: 0;
+    font-size: 12px;
+}
+
+body.normal .event .time {
+    margin: 1px 3px;
+    float: left;
+    text-align: right;
+    font-size: 11px;
+    color: #a6b9c0;
+}
+
+body.normal .line[highlight=true] span.message {
+	background: #fac695; /* Old browsers */
+	background: -moz-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fac695), color-stop(47%,#f5ab66), color-stop(100%,#ef8d31)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* IE10+ */
+	background: linear-gradient(top, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
+	
+	color: #000;
+}
+
+body.normal .member {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+body.normal .member:hover {
+    text-decoration: underline;
+}
+
+body.normal {
+    
+}
+
+body.console {
+    
+}
+
+body[type=channel] {
+    
+}
+
+body[type=talk] {
+    
+}
+
+body[type=console] {
+    
+}
+
+body.normal hr {
+    margin: 0;
+    padding: 2px;
+    border: none;
+    background-color: #d33b54;
+    height: 2px;
+    text-align: center;
+}
+
+a {
+    
+}
+
+/* lines */
+
+.line[alternate=even] {
+    
+}
+
+.line[alternate=odd] {
+    
+}
+
+.line[type=action] .sender:before {
+    content: "";
+}
+
+body.normal .line[type=action] .sender {
+    font-style: italic;
+}
+
+body.normal .line[type=action] .message {
+    background: #2c3236;
+    border-left: none;
+    border-bottom: none;
+    margin: 0 0 0 130px;
+}
+
+body.normal .url {
+    word-break: break-all;
+}
+
+body.normal .address {
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+body.normal .highlight {
+    /*color: #d33b54;*/
+    color: #000;
+    font-weight: bold;
+}
+
+.effect { 
+
+}
+
+/*	
+.effect[color-number="0"] {color:darkred;}
+.effect[color-number="1"] {color:red;}
+.effect[color-number="2"] {color:lightred;}
+.effect[color-number="3"] {color:darkgreen;}
+.effect[color-number="4"] {color:green;}
+.effect[color-number="5"] {color:lightgreen;}
+.effect[color-number="6"] {color:darkblue;}
+.effect[color-number="7"] {color:blue;}
+.effect[color-number="8"] {color:lightblue;}
+.effect[color-number="9"] {color:darkgrey;}
+.effect[color-number="10"] {color:grey;}
+.effect[color-number="11"] {color:lightgrey;}
+.effect[color-number="12"] {color:black;}
+.effect[color-number="13"] {color:black;}
+.effect[color-number="14"] {color:black;}
+.effect[color-number="15"] {color:black;}
+.effect[bgcolor-number='0'] {}
+.effect[bgcolor-number='1'] {}
+.effect[bgcolor-number='2'] {}
+.effect[bgcolor-number='3'] {}
+.effect[bgcolor-number='4'] {}
+.effect[bgcolor-number='5'] {}
+.effect[bgcolor-number='6'] {}
+.effect[bgcolor-number='7'] {}
+.effect[bgcolor-number='8'] {}
+.effect[bgcolor-number='9'] {}
+.effect[bgcolor-number='10'] {}
+.effect[bgcolor-number='11'] {}
+.effect[bgcolor-number='12'] {}
+.effect[bgcolor-number='13'] {}
+.effect[bgcolor-number='14'] {}
+.effect[bgcolor-number='15'] {}
+*/
+
+/* .effect[bgcolor-number='1'] { background: transparent; } */
+
+/* nickname for text messages */
+
+body.normal .sender[type=myself] {
+    color: #fff;
+}
+
+body.normal .sender[type=normal] {
+    color: #ddd;
+}
+
+body.normal .sender[type=normal][colornumber='0'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='1'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='2'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='3'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='4'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='5'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='6'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='7'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='8'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='9'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='10'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='11'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='12'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='13'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='14'] {
+    
+}
+
+body.normal .sender[type=normal][colornumber='15'] {
+    
+}
+
+/* message body */
+
+
+body.normal .message {
+    
+}
+
+body.normal .message[type=system] {
+    color: #eee;
+}
+
+body.normal .message[type=error] {
+    color: #d14025;
+    font-weight: bold;
+}
+
+body.normal .message[type=reply] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=error_reply] {
+    color: #d33b54;
+}
+
+body.normal .message[type=dcc_send_send] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=dcc_send_receive] {
+    color: #153b7c;
+}
+
+body.normal .message[type=privmsg] {
+    
+}
+
+body.normal .message[type=notice] {
+    color: #888;
+}
+
+body.normal .message[type=action] {
+    color: #ddd;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body.normal .message[type=join] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=part] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=kick] {
+    color: #303030;
+}
+
+body.normal .message[type=quit] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=kill] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=nick] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=mode] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=topic] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=invite] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=wallops] {
+    color: #a6b9c0;
+}
+
+body.normal .message[type=debug_send] {
+    color: #aaa;
+}
+
+body.normal .message[type=debug_receive] {
+    color: #444;
+}
+
+/* Icons/logos for some popular apps/channels */
+
+/* todo: Need to suss out how to make the channel transparent enough to see these */
+
+html[channelname="#limechat"].normal {
+	background: white url('badges/limechat.png') no-repeat fixed bottom right;
+}
+
+html[channelname="##textmate"].normal {
+	background: white url('badges/textmate.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#adium"].normal {
+	background: white url('badges/adium.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#colloquy"].normal {
+	background: white url('badges/colloquy.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#growl"].normal {
+	background: white url('badges/growl.png') no-repeat fixed bottom right;
+}
+html[channelname="#ruby"].normal {
+	background: white url('badges/ruby.png') no-repeat fixed bottom right;
+}
+html[channelname="#RubyOnRails"].normal {
+	background: white url('badges/rubyonrails.png') no-repeat fixed bottom right;
+}
+html[channelname="#railsbridge"].normal {
+	background: white url('badges/rubyonrails.png') no-repeat fixed bottom right;
+}
+html[channelname="##apple"].normal {
+	background: white url('badges/apple.png') no-repeat fixed bottom right;
+}
+html[channelname="#python"].normal {
+	background: white url('badges/python.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#drupal"].normal {
+	background: white url('badges/drupal.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#drupal-au"].normal {
+	background: white url('badges/drupal-au.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#drupal-support"].normal {
+	background: white url('badges/drupal-support.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#aegir"].normal {
+	background: white url('badges/aegir.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#open_atrium"].normal {
+	background: white url('badges/atrium.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#rvm"].normal {
+	background: white url('badges/rvm.png') no-repeat fixed bottom right;
+}
