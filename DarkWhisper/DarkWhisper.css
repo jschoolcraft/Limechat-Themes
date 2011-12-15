@@ -2,7 +2,7 @@ html.normal {
     color: #4b4b4b;
     background-color: black;
 	
-    font: 12px/1.3em 'Lucida Grande' sans-serif;
+    font: 10px "Helvetica Neue", Helvetica, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -26,11 +26,13 @@ body.normal img {
 
 body.normal a:link, a:visited, a:hover, a:active {
     color: #a5bbcf;
+	border-bottom: dotted 1px #315371;
     text-decoration: none;
 }
 
 body.normal a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: solid 1px #a5bbcf;
 }
 
 body.normal .text span {
@@ -93,7 +95,7 @@ body.normal .event .message {
     border: 0;
     color: #a6b9c0;
     background: none;
-    font: bold 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font: bold 10px "Helvetica Neue", Helvetica, Verdana, sans-serif;
 }
 
 body.normal .line .time {
@@ -102,21 +104,21 @@ body.normal .line .time {
     margin-top: 5px;
     margin-left: 4px;
     color: #999;
-    font: bold 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font: bold 10px "Helvetica Neue", Helvetica, Verdana, sans-serif;
 }
 
 body.normal .line .place {
     display: block;
     color: #999;
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 body.normal .event .time {
     margin: 1px 3px;
     float: left;
     text-align: right;
-    font-size: 11px;
+    font-size: 10px;
     color: #a6b9c0;
 }
 
@@ -213,6 +215,17 @@ body.normal .highlight {
     /*color: #d33b54;*/
     color: #000;
     font-weight: bold;
+}
+
+body.normal .line[highlight=true] a:link, a:visited, a:hover, a:active {
+	color: #172734;
+	border-bottom: dotted 1px #172734;
+}
+
+body.normal .line[highlight=true] a:hover {
+	color: #000;
+	text-decoration: none;
+	border-bottom: solid 1px #000;
 }
 
 .effect { 

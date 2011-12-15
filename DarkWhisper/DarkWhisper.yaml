@@ -6,14 +6,14 @@ log-view:
     scroller-highlight-color: '#d33b54'
 
 input-text:
-  font-family: 'LucidaGrande'
-  font-size: 12.0
+  font-family: 'Helvetica Neue'
+  font-size: 10.0
   background-color: 'black'
   color: 'white'
 
 member-list:
-    font-family: 'Lucida Grande'
-    font-size: 12
+    font-family: 'Helvetica Neue'
+    font-size: 10.0
     color: '#bbb'
     background-color: '#2c3236'
     operator:
@@ -27,6 +27,8 @@ member-list:
             bottom-color: '#445b73'
 
 server-tree:
+    font-family: 'Helvetica Neue'
+    font-size: 10.0
     background-color: '#2c3236'
     highlight:
         color: '#fac695'
