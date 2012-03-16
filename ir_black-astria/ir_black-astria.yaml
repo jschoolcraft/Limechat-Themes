@@ -1,0 +1,53 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'.
+# You cannot use color names.
+
+# The following are the preferred 16 colors for your terminal
+#           Colors      Bright Colors
+# Black     #4E4E4E     #7C7C7C
+# Red       #FF6C60     #FFB6B0
+# Green     #A8FF60     #CEFFAB
+# Yellow    #FFFFB6     #FFFFCB
+# Blue      #96CBFE     #FFFFCB
+# Magenta   #FF73FD     #FF9CFE
+# Cyan      #C6C5FE     #DFDFFE
+# White     #EEEEEE     #FFFFFF
+
+log-view:
+  nickname-format: '%n: '
+  scroller-highlight-color: '#f0f'
+input-text:
+  font-family: 'Menlo'
+  font-size: 13.0
+  background-color: '#000'
+  color: '#f6f3e8'
+  selected:
+    background-color: '#1D1E2C'
+member-list:
+  font-family: 'Menlo'
+  font-size: 11.0
+  color: '#4E4E4E'
+  background-color: '#000'
+  operator:
+    color: '#FF6C60'
+  selected:
+    color: '#1D1E2C'
+server-tree:
+  font-family: 'Menlo'
+  font-size: 11.0
+  background-color: '#000'
+  highlight:
+    color: '#FFFFCB'
+  newtalk:
+    color: '#A8FF60'
+  unread:
+    color: '#A8FF60'
+  normal:
+    active:
+      color: '#4E4E4E'
+    inactive:
+      color: '#4E4E4E'
+  selected:
+    active:
+      color: '#4E4E4E'
+    inactive:
+      color: '#888'
