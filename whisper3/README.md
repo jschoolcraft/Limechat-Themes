@@ -1,3 +1,5 @@
+![Whisper3 icon](http://michaeldeol.com/wp-content/uploads/2012/05/Screen-Shot-2012-05-08-at-11.14.57-PM-e1336544513518.png)
+
 #Whisper 3
 
 ----
