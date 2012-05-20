@@ -37,3 +37,6 @@
 [submodule "limechat-asphalt"]
 	path = limechat-asphalt
 	url = http://github.com/jpfau/limechat-asphalt.git
+[submodule "Choco"]
+	path = Choco
+	url = http://github.com/marcransome/Choco.git
