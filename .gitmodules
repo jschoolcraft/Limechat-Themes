@@ -9,7 +9,7 @@
 	url = http://github.com/dylanm/campfire-limechat.git
 [submodule "usably-limechat"]
 	path = usably-limechat
-	url = http://github.com/idangazit/usably-limechat.git
+	url = http://github.com/idan/usably-limechat.git
 [submodule "ManmaruDrop"]
 	path = ManmaruDrop
 	url = http://github.com/ukstudio/ManmaruDrop.git
