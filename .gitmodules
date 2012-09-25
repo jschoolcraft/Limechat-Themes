@@ -40,3 +40,6 @@
 [submodule "Choco"]
 	path = Choco
 	url = http://github.com/marcransome/Choco.git
+[submodule "limechat-theme-colloquy"]
+	path = limechat-theme-colloquy
+	url = http://github.com/Krinkle/limechat-theme-colloquy.git
