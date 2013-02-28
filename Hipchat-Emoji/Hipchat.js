@@ -26,7 +26,7 @@ document.addEventListener("DOMNodeInserted", function(e) {
 			for(var order in emojis) {
 				emoji = emojis[order].match(/\:([\d\w+-_]+)\:/);
 				src = imgbase + emoji[1] + '.png';
-				msg.innerHTML = msg.innerHTML.replace(":"+emoji[1]+":", '<img src="'+src+'" class="emoji-img" />');
+				msg.innerHTML = msg.innerHTML.replace(":"+emoji[1]+":", '<img src="'+src+'" class="emoji-img" title="'+emoji[1]+'" />');
 			}
 
 			break;
