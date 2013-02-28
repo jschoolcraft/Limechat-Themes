@@ -1,3 +1,6 @@
+// Code based on
+// https://github.com/tmitz/limechat-emoji/blob/master/Limelight-emoji.js
+
 String.prototype.startsWith = function (s) {
 	return this.indexOf(s) == 0;
 }
