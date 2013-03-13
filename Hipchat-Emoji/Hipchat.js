@@ -18,7 +18,7 @@ document.addEventListener("DOMNodeInserted", function(e) {
 			var msg = line.getElementsByClassName('message').item(0);
 			if (/http:/.test(msg.innerHTML)) return;
 
-			var emojis = msg.innerHTML.match(/\:([\d\w+-_]+)\:/g);
+			var emojis = msg.innerHTML.match(/\:([a-zA-Z][a-zA-Z\d-_]+)\:/g);
 			if (!emojis) return;
 
 			var src = "";
