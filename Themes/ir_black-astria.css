@@ -1,0 +1,203 @@
+/*
+  A theme inspired by ir_black (http://blog.infinitered.com/entries/show/2) and Textual's Astria theme
+  @author Jeff Schoolcraft
+  @author Mitchell Lewandowski
+  @description ir_black + astria for nick color randomization
+
+  The following are the preferred 16 colors for your terminal
+            Colors      Bright Colors
+  Black     #4E4E4E     #7C7C7C
+  Red       #FF6C60     #FFB6B0
+  Green     #A8FF60     #CEFFAB
+  Yellow    #FFFFB6     #FFFFCB
+  Blue      #96CBFE     #FFFFCB
+  Magenta   #FF73FD     #FF9CFE
+  Cyan      #C6C5FE     #DFDFFE
+  White     #EEEEEE     #FFFFFF
+
+*/
+
+html {
+  font-family: 'Menlo';
+  font-size: 9pt;
+  background-color: #000;
+  color: #EEEEEE;
+}
+
+body {}
+
+.url { color: #FF73FD; }
+.address {}
+.highlight {
+  font-weight: normal;
+  color: #7C7C7C;
+  background-color: #FFFFB6;
+}
+
+.line {}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+
+.line[highlight=true] {
+  background-color: #FFFFB6;
+  color: #7C7C7C;
+}
+
+/* Handle the overload of non important messages by ignoring them */
+.line[type=join], .line[type=part], .line[type=quit] { display: none; }
+
+.time { color: #FFFFCB; }
+.place { color: #96CBFE; }
+
+.sender[type=normal] { color: #96CBFE; }
+.sender[type=myself] { color: #DFDFFE; }
+
+/* ML Textual Nick Colorization Mods */
+
+.sender[type*=normal][colornumber='0'], 
+.inline_nickname[colornumber='0'] { color: #cb5d5a; }
+
+.sender[type*=normal][colornumber='1'], 
+.inline_nickname[colornumber='1'] { color: #a3bf75; }
+
+.sender[type*=normal][colornumber='2'], 
+.inline_nickname[colornumber='2'] { color: #9b85b3; }
+
+.sender[type*=normal][colornumber='3'], 
+.inline_nickname[colornumber='3'] { color: #C083F2; }
+
+.sender[type*=normal][colornumber='4'], 
+.inline_nickname[colornumber='4'] { color: #8bd3e5; }
+
+.sender[type*=normal][colornumber='5'], 
+.inline_nickname[colornumber='5'] { color: #f4a36c; }
+
+.sender[type*=normal][colornumber='6'], 
+.inline_nickname[colornumber='6'] { color: #75ade1; }
+
+.sender[type*=normal][colornumber='7'], 
+.inline_nickname[colornumber='7'] { color: #ffbfbd; }
+
+.sender[type*=normal][colornumber='8'], 
+.inline_nickname[colornumber='8'] { color: #b2cc00; }
+
+.sender[type*=normal][colornumber='9'], 
+.inline_nickname[colornumber='9'] { color: #96ff00; }
+
+.sender[type*=normal][colornumber='10'], 
+.inline_nickname[colornumber='10'] { color: #05ffaa; }
+
+.sender[type*=normal][colornumber='11'], 
+.inline_nickname[colornumber='11'] { color: #ffe982; }
+
+.sender[type*=normal][colornumber='12'], 
+.inline_nickname[colornumber='12'] { color: #aadeff; }
+
+.sender[type*=normal][colornumber='13'], 
+.inline_nickname[colornumber='13'] { color: #36ff15; }
+
+.sender[type*=normal][colornumber='14'], 
+.inline_nickname[colornumber='14'] { color: #ff6076; }
+
+.sender[type*=normal][colornumber='15'], 
+.inline_nickname[colornumber='15'] { color: #8e908f; }
+
+.sender[type*=normal][colornumber='16'], 
+.inline_nickname[colornumber='16'] { color: #706616; }
+
+.sender[type*=normal][colornumber='17'], 
+.inline_nickname[colornumber='17'] { color: #46799c; }
+
+.sender[type*=normal][colornumber='18'], 
+.inline_nickname[colornumber='18'] { color: #80372e; }
+
+.sender[type*=normal][colornumber='19'], 
+.inline_nickname[colornumber='19'] { color: #8F478E; }
+
+.sender[type*=normal][colornumber='20'], 
+.inline_nickname[colornumber='20'] { color: #5b9e4c; }
+
+.sender[type*=normal][colornumber='21'], 
+.inline_nickname[colornumber='21'] { color: #13826c; }
+
+.sender[type*=normal][colornumber='22'], 
+.inline_nickname[colornumber='22'] { color: #b13637; }
+
+.sender[type*=normal][colornumber='23'], 
+.inline_nickname[colornumber='23'] { color: #e45d59; }
+
+.sender[type*=normal][colornumber='24'], 
+.inline_nickname[colornumber='24'] { color: #1b51ae; }
+
+.sender[type*=normal][colornumber='25'], 
+.inline_nickname[colornumber='25'] { color: #4855ac; }
+
+.sender[type*=normal][colornumber='26'], 
+.inline_nickname[colornumber='26'] { color: #7f1d86; }
+
+.sender[type*=normal][colornumber='27'], 
+.inline_nickname[colornumber='27'] { color: #73643f; }
+
+.sender[type*=normal][colornumber='28'], 
+.inline_nickname[colornumber='28'] { color: #0b9578; }
+
+.sender[type*=normal][colornumber='29'], 
+.inline_nickname[colornumber='29'] { color: #569c96; }
+
+.sender[type*=normal][colornumber='30'], 
+.inline_nickname[colornumber='30'] { color: #08465f; }
+
+/* mIRC Color Codes */
+
+.effect[color-number='0']  { color: #ffffff; }
+.effect[color-number='1']  { color: #000000; }
+.effect[color-number='2']  { color: #000088; }
+.effect[color-number='3']  { color: #008800; }
+.effect[color-number='4']  { color: #ff0000; }
+.effect[color-number='5']  { color: #880000; }
+.effect[color-number='6']  { color: #880088; }
+.effect[color-number='7']  { color: #ff8800; }
+.effect[color-number='8']  { color: #ffff00; }
+.effect[color-number='9']  { color: #00ff00; }
+.effect[color-number='10'] { color: #008888; }
+.effect[color-number='11'] { color: #00ffff; }
+.effect[color-number='12'] { color: #0000ff; }
+.effect[color-number='13'] { color: #ff00ff; }
+.effect[color-number='14'] { color: #888888; }
+.effect[color-number='15'] { color: #cccccc; }
+
+.effect[bgcolor-number='0']  { background-color: #ffffff; }
+.effect[bgcolor-number='1']  { background-color: #000000; }
+.effect[bgcolor-number='2']  { background-color: #000088; }
+.effect[bgcolor-number='3']  { background-color: #008800; }
+.effect[bgcolor-number='4']  { background-color: #ff0000; }
+.effect[bgcolor-number='5']  { background-color: #880000; }
+.effect[bgcolor-number='6']  { background-color: #880088; }
+.effect[bgcolor-number='7']  { background-color: #ff8800; }
+.effect[bgcolor-number='8']  { background-color: #ffff00; }
+.effect[bgcolor-number='9']  { background-color: #00ff00; }
+.effect[bgcolor-number='10'] { background-color: #008888; }
+.effect[bgcolor-number='11'] { background-color: #00ffff; }
+.effect[bgcolor-number='12'] { background-color: #0000ff; }
+.effect[bgcolor-number='13'] { background-color: #ff00ff; }
+.effect[bgcolor-number='14'] { background-color: #888888; }
+.effect[bgcolor-number='15'] { background-color: #cccccc; }
+
+/* ML Textual Nick Colorization Mods */
+
+.message[type=privmsg] {}
+.message[type=notice] { color: #4E4E4E; }
+.message[type=action] { color: #4E4E4E;}
+
+.message[type=system], .message[type=join], .message[type=part], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=topic], .message[type=invite], .message[type=wallops] {
+  color: #A8FF60;
+}
+.message[type=reply] { color: #509036; }
+
+.message[type=error], .message[type=error_reply] { color: #FF6C60; }
+.message[type=dcc_send_send] { color: #FF6C60; }
+.message[type=dcc_send_receive] { color: #FF6C60; }
+.message[type=debug_send] { color: #FF6C60; }
+.message[type=debug_receive] { color: #FF6C60; }

@@ -1,0 +1,52 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'.
+# You cannot use color names.
+
+log-view:
+  nickname-format: '<%n> '
+  scroller-highlight-color: '#000' #f0f
+input-text:
+  font-family: 'DejaVuSansMono'
+  font-size: 12.0
+  background-color: '#272822' # 3e3d32
+  color: '#e6db74' # f8f8f0
+member-list:
+  font-family: 'DejaVuSansMono'
+  font-size: 12.0
+  color: '#e6db74' # 000
+  background-color: '#272822' # fff
+  operator:
+    color: '#f92672' # 000
+  selected:
+    color: '#66d9ef' # fff
+    background:
+      # gradient
+      top-line-color: '#888'
+      bottom-line-color: '#888'
+      top-color: '#888'
+      bottom-color: '#888'
+server-tree:
+  font-family: 'DejaVuSansMono'
+  font-size: 12.0
+  background-color: '#272822' # e5edf7
+  highlight:
+    color: '#f92672' #f0f
+  newtalk:
+    color: '#66d9ef' #f00
+  unread:
+    color: '#66d9ef' #00f
+  normal:
+    active:
+      color: '#e6db74' #000
+    inactive:
+      color: '#49483e' #ccc
+  selected:
+    active:
+      color: '#ddd'
+    inactive:
+      color: '#888'
+    background:
+      # gradient
+      top-line-color: '#49483e' #adbbd0
+      bottom-line-color: '#888' #75715e #8c98b0
+      top-color: '#49483e' #adbbd0
+      bottom-color: '#75715e' #98aac4

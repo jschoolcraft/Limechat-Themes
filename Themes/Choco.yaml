@@ -1,0 +1,51 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'.
+# You cannot use color names.
+
+log-view:
+  nickname-format: '%n'
+input-text:
+  font-family: 'Menlo'
+  font-size: 12.0
+  background-color: '#202020'
+  color: '#ffffff'
+member-list:
+  font-family: 'Menlo'
+  font-size: 12.0
+  color: '#bbb'
+  background-color: '#202020'
+  operator:
+    color: '#cf7d34'
+  selected:
+    color: '#e9c062'
+    background:
+      # gradient
+      top-line-color: '#424242'
+      bottom-line-color: '#424242'
+      top-color: '#424242'
+      bottom-color: '#424242'
+server-tree:
+  font-family: 'Menlo'
+  font-size: 12.0
+  background-color: '#202020'
+  highlight:
+    color: '#99cc66'
+  newtalk:
+    color: '#99cc66'
+  unread:
+    color: '#cf7d34'
+  normal:
+    active:
+      color: '#888'
+    inactive:
+      color: '#5e5960'
+  selected:
+    active:
+      color: '#e9c062'
+    inactive:
+      color: '#7c767e'
+    background:
+      # gradient
+      top-line-color: '#424242'
+      bottom-line-color: '#424242'
+      top-color: '#424242'
+      bottom-color: '#424242'
