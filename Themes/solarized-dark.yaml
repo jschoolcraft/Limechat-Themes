@@ -1,0 +1,73 @@
+##------------------------------------------------------
+##  A limechat theme by Tad Thorley                      
+##  The solarized color scheme is by Ethan Schoonover    
+##  
+##  base03:  #002B36;
+##  base02:  #073642;
+##  base01:  #586E75;
+##  base00:  #657B83;
+##  base0:   #839496;
+##  base1:   #93A1A1;
+##  base2:   #EEE8D5;
+##  base3:   #FDF6E3;
+##  yellow:  #B58900;
+##  orange:  #CB4B16;
+##  red:     #D30102;
+##  magenta: #D33682;
+##  violet:  #6C71C4;
+##  blue:    #268BD2;
+##  cyan:    #2AA198;
+##  green:   #859900;   
+##------------------------------------------------------
+log-view:
+  nickname-format: '%n '
+  scroller-highlight-color: '#859900'
+  
+input-text:
+  font-family: 'Lucida Grande'
+  font-size: 12.0
+  background-color: '#073642'
+  color: '#93A1A1'
+  selected:
+    background-color: '#002B36'
+    
+member-list:
+  font-family: 'Lucida Grande'
+  font-size: 12.0
+  color: '#93A1A1'
+  background-color: '#073642'
+  operator:
+    color: '#CB4B16'
+  selected:
+    color: '#FDF6E3'
+    background:
+      top-line-color: '#073642'
+      bottom-line-color: '#073642'
+      top-color: '#073642'
+      bottom-color: '#073642'
+        
+server-tree:
+  font-family: 'Lucida Grande'
+  font-size: 12.0
+  background-color: '#073642'
+  highlight:
+    color: '#CB4B16'
+  newtalk:
+    color: '#859900'
+  unread:
+    color: '#268BD2'
+  normal:
+    active:
+      color: '#586E75'
+    inactive:
+      color: '#586E75'
+  selected:
+    active:
+      color: '#FDF6E3'
+    inactive:
+      color: '#93A1A1'
+    background:
+      top-line-color: '#073642'
+      top-color: '#073642'
+      bottom-line-color: '#073642'
+      bottom-color: '#073642'
