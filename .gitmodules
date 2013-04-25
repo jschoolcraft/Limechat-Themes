@@ -43,3 +43,6 @@
 [submodule "limechat-theme-colloquy"]
 	path = limechat-theme-colloquy
 	url = http://github.com/Krinkle/limechat-theme-colloquy.git
+[submodule "limechat-solarized-theme"]
+	path = limechat-solarized-theme
+	url = git@github.com:phaedryx/limechat-solarized-theme.git
