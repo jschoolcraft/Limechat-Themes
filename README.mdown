@@ -17,3 +17,14 @@ When you add a theme, drop it into it's own directory, or add it as a git submod
 That will put symlinks to the css, js and yaml files in the root. You can then use the installer to push your changes to the themes directory.
 
 When you develop a theme, feel free to use the badges directory to store your channel badges. You can link to it, or just use it.
+
+
+----
+
+All themes are available under the `Themes` folder, ready for consumption by LimeChat, just create a symbolic link to your Themes directory.
+
+To copy all `*.css` and `*.yaml` files in the `Themes` folder run this command from shell:
+
+```shell
+find ./ -name *.css -o -name *.yaml -exec cp {} Themes/ \;
+```

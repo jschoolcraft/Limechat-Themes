@@ -1,0 +1,43 @@
+html { font: 12px "lucida grande"; padding: 0 }
+
+body { display: table; width: 100% }
+
+a { color: #03c }
+a:hover { color: white; background: black; text-decoration: none }
+
+.line { display: table-row }
+
+.text[highlight=true] { background: #ffc }
+
+.event .sender, .line[highlight=true] .sender { background: transparent }
+
+.highlight { color: inherit; font-weight: normal }
+
+.text .message { border-left: 1px solid #dcdcdc; word-break: break-word }
+
+.sender, .message { display: table-cell; padding: 5px; border-bottom: 1px solid; }
+.text .sender, .text .message { border-bottom-color: #efefef }
+.event .sender, .event .message { border-bottom-color: white }
+
+.event { font-size: 10px; background: #d9fad9; color: inherit }
+.event .message { color: inherit }
+
+.event[type=join], .event[type=kick], .event[type=part], .event[type=quit] { background: #d9e7fb }
+.event[type=mode] { background: #f6c1a9 }
+.event[type=nick], .event[type=topic] { background: #fadda5 }
+
+.sender { text-align: right; vertical-align: top; font-weight: bold; white-space: nowrap }
+.text .sender { background: #efefef }
+.sender[type=normal], .sender[type=myself] { color: inherit }
+
+/* Have to figure out something for this. */
+.time { display: none }
+
+/* Get rid of the •. */
+.line[type=action] .sender:before { content: "" }
+.line[type=action] .message:before, .line[type=action] .message:after { content:"*" }
+
+/* Marks. */
+hr { margin: 0; border-color: black }
+
+img { border: 0 }
