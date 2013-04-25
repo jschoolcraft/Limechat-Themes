@@ -1,0 +1,46 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'.
+# You cannot use color names.
+
+log-view:
+    nickname-format: '%n'
+    scroller-highlight-color: '#d33b54'
+
+member-list:
+    font-family: 'Lucida Grande'
+    font-size: 11
+    color: '#ccc'
+    background-color: '#1e1e27'
+    operator:
+        color: '#dedede'
+    selected:
+        color: '#cfbc99'
+        background:
+            top-line-color: '#3f3e4c'
+            bottom-line-color: '#3f3e4c'
+            top-color: '#3f3e4c'
+            bottom-color: '#201f27'
+
+server-tree:
+    background-color: '#1e1e27'
+    font-size: 11
+    highlight:
+        color: '#699fcf'
+    newtalk:
+        color: '#699fcf'
+    unread:
+        color: '#699fcf'
+    normal:
+        active:
+            color: '#fff'
+        inactive:
+            color: '#ccc'
+    selected:
+        active:
+            color: '#cfbc99'
+        inactive:
+            color: '#eee'
+        background:
+            top-line-color: '#3f3e4c'
+            bottom-line-color: '#3f3e4c'
+            top-color: '#3f3e4c'
+            bottom-color: '#201f27'

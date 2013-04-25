@@ -1,0 +1,31 @@
+log-view:
+  nickname-format: '%n'
+  scroller-highlight-color: '#000'
+input-text:
+  font-size: 12
+member-list:
+  font-size: 12
+server-tree:
+  font-size: 12
+  background-color: '#d4dde6'
+  highlight:
+    color: '#f0f'
+  newtalk:
+    color: '#f00'
+  unread:
+    color: '#00f'
+  normal:
+    active:
+      color: '#000'
+    inactive:
+      color: '#ccc'
+  selected:
+    active:
+      color: '#fff'
+    inactive:
+      color: '#888'
+    background:
+      top-line-color: '#4580c8'
+      top-color: '#5c93d6'
+      bottom-color: '#1a57ad'
+      bottom-line-color: '#1654aa'
