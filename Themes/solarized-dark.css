@@ -1,0 +1,181 @@
+/*-----------------------------------------------------------------------------
+  A limechat theme by Tad Thorley
+  The solarized color scheme is by Ethan Schoonover
+  
+  base03:  #002B36;
+  base02:  #073642;
+  base01:  #586E75;
+  base00:  #657B83;
+  base0:   #839496;
+  base1:   #93A1A1;
+  base2:   #EEE8D5;
+  base3:   #FDF6E3;
+  yellow:  #B58900;
+  orange:  #CB4B16;
+  red:     #D30102;
+  magenta: #D33682;
+  violet:  #6C71C4;
+  blue:    #268BD2;
+  cyan:    #2AA198;
+  green:   #859900;
+-----------------------------------------------------------------------------*/
+
+html {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 9pt;
+  background-color: #073642;
+  color: #93A1A1;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+body { margin: 0; padding: 0; }
+
+/* the html tag has these classes and attributes too */
+body.normal {
+  margin-top: 2.0em;
+}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+body[channelname=#limechat] {}
+
+hr { margin: 0.5em 2em; }
+a {
+  color: #268BD2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* lines */
+.line { 
+  padding: 0;
+  margin: 0;
+}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[type=action] {
+  font-style: italic;
+  color: #586E75;
+}
+.line[type=action] .sender:before {
+  content: ""
+}
+.line[highlight=true] {
+
+}
+.message {
+  margin-left: 8em;
+  margin-right: 5em;
+  display: block;
+}
+.url { word-break: break-all; }
+.address { 
+  text-decoration: underline; 
+  word-break: break-all; 
+}
+.highlight {
+  color: #CB4B16;
+}
+.event {
+  color: #586E75;
+}
+.event .message {
+  color: #586E75;
+}
+.time {
+  float: right;
+  text-align: left;
+  width: 4em;
+	color: #93A1A1;
+}
+.duptime {
+  display: none;
+}
+/* nickname for text messages */
+body.normal .sender {
+  overflow: hidden;
+  word-wrap: normal;
+  width: 7em;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+}
+.sender[type=myself] {
+  color: #B58900;
+}
+.sender[type=normal] { 
+  color: #859900;
+}
+.inlineimage {
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+/* console styles */
+body.console {
+  font-family: "Meslo", "Menlo", "Courier New", monospace;
+  padding: 0px 12px;
+  background-color: #073642;
+}
+body.console a {
+  color: #268BD2;
+}
+body.console .line {
+  border: none;
+  padding: 0;
+}
+body.console .line[highlight=true] {
+  color: #FFD36A;
+}
+body.console .place {
+  color: #6C71C4;
+}
+body.console .highlight {
+  color: #CB4B16;
+}
+body.console .sender {
+  padding: 0;
+  margin-right: 0.5em;
+  color: #859900;
+}
+body.console .message {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: #93A1A1;
+}
+body.console .message[type="quit"], 
+body.console .message[type="join"],
+body.console .message[type="nick"],
+body.console .message[type="topic"],
+body.console .message[type="mode"],
+body.console .message[type="part"],
+body.console .message[type="kill"],
+body.console .message[type="notice"],
+body.console .message[type="invite"] {
+  padding: 0;
+  color: #586E75;
+}
+body.console .time {
+  color: #586E75;
+}
+
+#topic {
+  color: #073642;
+  background-color: #586E75;
+  padding: 0.25em 0;
+  margin: 0;
+  min-height: 1.0em;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  text-align: center;
+}
