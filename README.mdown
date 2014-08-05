@@ -21,10 +21,12 @@ When you develop a theme, feel free to use the badges directory to store your ch
 
 ----
 
-All themes are available under the `Themes` folder, ready for consumption by LimeChat, just create a symbolic link to your Themes directory.
+All themes are available under the `Themes` folder, ready for consumption by LimeChat. You can just create a symbolic link to your Themes directory.
 
-To copy all `*.css` and `*.yaml` files in the `Themes` folder run this command from shell:
+Alternatively, you can copy all `*.css` and `*.yaml` files in the `Themes` folder run this command from shell:
+
+*Note:* Make sure you're in the root of the `Limechat-Themes` folder that you just downloaded from here.
 
 ```shell
-find ./ -name *.css -o -name *.yaml -exec cp {} Themes/ \;
+find ./ -name *.css -o -name *.yaml -exec cp {} /Users/$USER/Library/Application\ Support/LimeChat/Themes/ \;
 ```
