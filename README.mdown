@@ -2,24 +2,24 @@ Just a collection of themes for [LimeChat](http://limechat.net/mac/)
 
 Fork and add your theme if you like, [pjammer](http://github.com/pjammer) and I thought it would be cool to have a single repo for all limechat themes.
 
-----
+---
+
 Updates by [tsykoduk](http://github.com/tsykoduk)
 
 After you git this package, you will want to use some of the built in tools:
 
-* rake themes:init     # Initalize the directory, loading the submodules
-* rake themes:install  # Install into the logged in user's limechat directory
+- rake themes:init # Initalize the directory, loading the submodules
+- rake themes:install # Install into the logged in user's limechat directory
 
 When you add a theme, drop it into it's own directory, or add it as a git submodule, then run
 
-* rake themes:linkup
+- rake themes:linkup
 
 That will put symlinks to the css, js and yaml files in the root. You can then use the installer to push your changes to the themes directory.
 
 When you develop a theme, feel free to use the badges directory to store your channel badges. You can link to it, or just use it.
 
-
-----
+---
 
 All themes are available under the `Themes` folder, ready for consumption by LimeChat. You can just create a symbolic link to your Themes directory.
 
@@ -30,3 +30,98 @@ Alternatively, you can copy all `*.css` and `*.yaml` files in the `Themes` folde
 ```shell
 find ./ -name *.css -o -name *.yaml -exec cp {} /Users/$USER/Library/Application\ Support/LimeChat/Themes/ \;
 ```
+
+---
+
+Screenshots
+-----------
+
+*Not all themes are currently covered and some screenshots may not show the themes at their full glory*
+
+### [asphalt](/limechat-asphalt)
+
+![](/screenshots/asphalt.png)
+
+### [ir_black](/ir_black)
+
+![](/screenshots/ir_black.png)
+
+### [campfire](/campfire-limechat)
+
+![](/screenshots/campfire.png)
+
+### [choco](/Choco)
+
+![](/screenshots/choco.png)
+
+### [code7](/limechat-code7)
+
+![](/screenshots/code7.png)
+
+### [DarkWhisper](/DarkWhisper)
+
+![](/screenshots/DarkWhisper.png)
+
+### [decafbland](/decafbland-limechat)
+
+![](/screenshots/decafbland.png)
+
+### [graphite](/limechat-graphite)
+
+![](/screenshots/graphite.png)
+
+### [grayzone](/limechat-grayzone)
+
+![](/screenshots/grayzone.png)
+
+### [Hipchat](/Hipchat)
+
+![](/screenshots/Hipchat.png)
+
+### [ir_black](/ir_black)
+
+![](/screenshots/ir_black.png)
+
+### [ir_black-astria](/ir_black-astria)
+
+![](/screenshots/ir_black-astria.png)
+
+### [Limelight](/Limelight)
+
+![](/screenshots/Limelight.png)
+
+### [ManmaruDrop](/ManmaruDrop)
+
+![](/screenshots/ManmaruDrop.png)
+
+### [monokai](/monokai-limechat)
+
+![](/screenshots/monokai.png)
+
+### [RedKnight](/RedKnight)
+
+![](/screenshots/RedKnight.png)
+
+### [Spring Night (modified)](/Spring-Night--modified-)
+
+![](/screenshots/Spring-Night--modified.png)
+
+### [twilight](/limechat-twilight)
+
+![](/screenshots/twilight.png)
+
+### [usably](/usably-limechat)
+
+![](/screenshots/usably.png)
+
+### [whisper](/limechat-whisper)
+
+![](/screenshots/whisper.png)
+
+### [whisper2](/whisper2)
+
+![](/screenshots/Whisper2.png)
+
+### [whisper3](/whisper3)
+
+![](/screenshots/Whisper3.png)
