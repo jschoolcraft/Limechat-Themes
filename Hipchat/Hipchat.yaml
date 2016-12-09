@@ -5,15 +5,15 @@ log-view:
   nickname-format: '%n:'
   scroller-highlight-color: '#f0f'
 input-text:
-  font-family: 'Lucida Grande'
   font-size: 13.0
+  font-family: 'Menlo'
   background-color: '#fff'
   color: '#000'
   selected:
     background-color: '#ccc'
 member-list:
-  font-family: 'Lucida Grande'
   font-size: 13.0
+  font-family: 'Menlo'
   color: '#545454'
   background-color: '#fff'
   operator:
@@ -27,8 +27,8 @@ member-list:
       top-color: '#454b51'
       bottom-color: '#2f3339'
 server-tree:
-  font-family: 'Lucida Grande'
   font-size: 13.0
+  font-family: 'Menlo'
   background-color: '#383d43'
 
   highlight:
