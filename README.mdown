@@ -74,6 +74,10 @@ Screenshots
 
 ![](/screenshots/grayzone.png)
 
+### [hipchat-facebook](/hipchat-facebook)
+
+![](/screenshots/hipchat-facebook.png)
+
 ### [Hipchat](/Hipchat)
 
 ![](/screenshots/Hipchat.png)
