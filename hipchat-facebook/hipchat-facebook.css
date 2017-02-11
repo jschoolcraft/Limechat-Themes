@@ -47,8 +47,7 @@ strong.highlight,
     color: #fff;
     font-weight: bold; }
 
-.place {
-  display: none; }
+.place { display: block; }
 
 .time {
   color: #999999;
@@ -59,7 +58,6 @@ strong.highlight,
   z-index: 1000; }
 
 .sender {
-  padding: 5px 70px 5px 10px;
   margin: 0;
   width: 100%;
   display: block;
