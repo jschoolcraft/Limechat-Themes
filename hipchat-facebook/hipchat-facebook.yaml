@@ -1,0 +1,77 @@
+# All colors must be in the form of '#rrggbb' or '#rgb'
+
+log-view:
+  nickname-format: '%n'
+  # scroller-highlight-color: '#ff0000'
+
+input-text:
+  # font-family: 'Menlo'
+  # font-size: 13.0
+  background-color: '#ffffff'
+  # color: '#93a1a1'
+
+member-list:
+  # font-family: 'Menlo'
+  # font-size: 13.0
+
+  #########################
+  # Begin 2 column layout #
+  #########################
+  # color: '#b1b3b6'
+  # background-color: '#313949'
+  # operator:
+  #   color: '#b1b3b6'
+  # selected:
+  #   color: '#fff'
+  #   background:
+  #     top-line-color: '#1a1f28'
+  #     bottom-line-color: '#414857'
+  #     top-color: '#242b38'
+  #     bottom-color: '#242b38'
+  #######################
+  # End 3 column layout #
+  #######################
+
+  #########################
+  # Begin 3 column layout #
+  #########################
+  color: '#333333'
+  background-color: '#ffffff'
+  operator:
+    color: '#333333'
+  selected:
+    color: '#333333'
+    background:
+      top-line-color: '#f0f0f0'
+      bottom-line-color: '#f0f0f0'
+      top-color: '#f0f0f0'
+      bottom-color: '#f0f0f0'
+  #######################
+  # End 3 column layout #
+  #######################
+
+server-tree:
+  # font-family: 'Menlo'
+  # font-size: 13.0
+  background-color: '#313949'
+  highlight:
+    color: '#fff777'
+  newtalk:
+    color: '#fff777'
+  unread:
+    color: '#ff7777'
+  normal:
+    active: # joined
+      color: '#b1b3b6'
+    inactive: # left
+      color: '#474f5e'
+  selected:
+    active:
+      color: '#ffffff'
+    inactive:
+      color: '#ffffff'
+    background:
+      top-line-color: '#1a1f28'
+      bottom-line-color: '#414857'
+      top-color: '#242b38'
+      bottom-color: '#242b38'
