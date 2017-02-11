@@ -1,0 +1,107 @@
+/* global */
+/* urls */
+/* mentions */
+/* time */
+/* place */
+/* sender */
+/* messages */
+/* misc */
+html {
+  font-family: "SourceCodePro-Regular", "Menlo", "Lucida Grande", "Seoge UI", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  margin: 0; }
+
+.line {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.url {
+  word-break: break-all;
+  color: #105cb6;
+  text-decoration: none;
+  border-bottom: 1px solid #105cb6; }
+
+strong.highlight,
+.highlight {
+  font-weight: bold;
+  color: #fff;
+  padding: 3px 5px;
+  background: #6c9dc5;
+  margin: 0 3px 0 0;
+  border-radius: 4px; }
+  strong.highlight:before,
+  .highlight:before {
+    content: "@";
+    color: #fff;
+    font-weight: bold; }
+
+.place {
+  display: none; }
+
+.time {
+  color: #999999;
+  font-size: 10pt;
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  z-index: 1000; }
+
+.sender {
+  padding: 5px 70px 5px 10px;
+  margin: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .sender[type=normal] {
+    color: #636363; }
+  .sender[type=myself] {
+    color: #40556a; }
+
+.message {
+  background-color: #4080ff;
+  border-radius: 12px;
+  color: #ffffff !important;
+  margin: 5px auto 10px auto;
+  padding: 10px 15px;
+  display: inline-block;
+  max-width: 85%;
+  text-align: center;
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* error */
+  /* success */
+  /* notice */
+  /* warning */
+  /* misc */ }
+  .message[type=error], .message[type=error_reply], .message[type=kick] {
+    width: 100%;
+    color: #333; }
+  .message[type=join] {
+    width: 100%;
+    color: #333;}
+  .message[type=mode], .message[type=topic], .message[type=invite], .message[type=wallops], .message[type=quit], .message[type=part] {
+    width: 100%;
+    color: #333; }
+  .message[type=system], .message[type=reply], .message[type=dcc_send_send], .message[type=dcc_send_receive], .message[type=action], .message[type=kill], .message[type=nick], .message[type=debug_send], .message[type=debug_receive] {
+    width: 100%;
+    color: #333; }
