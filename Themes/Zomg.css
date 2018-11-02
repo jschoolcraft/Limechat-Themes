@@ -1,0 +1,200 @@
+html {
+  font-family: "Menlo";
+  font-size: 12pt;
+  background-color: #272A36;
+  color: #EAEBEA;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+	line-height: 3.2ex;
+}
+
+body.console {
+  background-color: #161820;
+}
+
+hr { margin: 0.5em 2em; }
+
+a {
+	color: inherit;
+}
+
+.line  { 
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.line > * {
+  padding: 0.3ex 1ex;
+}
+.time  { 
+  color: #5F5A60; 
+  text-align: right;
+}
+.place { 
+  color: #9a703f; 
+}
+
+body.normal .sender, body.normal .place, body.normal .time {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Nicks */
+
+.sender[type=normal] { color: #c4af75; font-weight: bold; }
+.sender[type=myself] { color: #8996A8; font-weight: bold; }
+
+/* Messages */
+.message { flex: 1; }
+.message[type=privmsg] { 
+  margin-top: -1px;
+  border-bottom: 1px solid #161820; 
+  border-top: 1px solid #161820; 
+}
+.message[type=action] { 
+  color: inherit; 
+  margin-top: -1px;
+  border-bottom: 1px solid #161820; 
+  border-top: 1px solid #161820; 
+}
+.message[type=notice] { color: #daefa3; }
+body.normal .message[type=notice] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=system] { color: #808080; }
+body.normal .message[type=system] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=error] { color: #ca773f; font-weight: bold; }
+body.normal .message[type=error] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=reply] { color: #f9ed97; }
+body.normal .message[type=reply] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=error_reply] { color: #e3c59c; }
+body.normal .message[type=error_reply] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=dcc_send_send] { color: #5e5960; }
+body.normal .message[type=dcc_send_send] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=dcc_send_receive] { color: #5e5960; }
+body.normal .message[type=dcc_send_receive] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=join] { color: #5e5960; }
+body.normal .message[type=join] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=part] { color: #5e5960; }
+body.normal .message[type=part] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=quit] { color: #5e5960; }
+body.normal .message[type=quit] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=kick] { color: #899a95; }
+body.normal .message[type=kick] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=kill] { color: #899a95; }
+body.normal .message[type=kill] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=nick] { color: #5e5960; }
+body.normal .message[type=nick] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=mode] { color: #8e9c69; }
+body.normal .message[type=mode] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=topic] { color: #8e9c69; }
+body.normal .message[type=topic] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=invite] { color: #daefa3; font-style: italic; }
+body.normal .message[type=invite] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=wallops] { color: #5e5960; }
+body.normal .message[type=wallops] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=debug_send] { color: #5e5960; }
+body.normal .message[type=debug_send] { background-color: rgba(0, 0, 0, 0.4); }
+.message[type=debug_receive] { color: #5e5960; }
+body.normal .message[type=debug_receive] { background-color: rgba(0, 0, 0, 0.4); }
+
+.highlight {
+	color: #ca773f;
+	font-weight: normal;
+}
+
+/* Special spans */
+
+.url {
+	word-break: break-all;
+}
+.address {
+	text-decoration: underline; word-break: break-all;
+}
+
+/* Spans in line */
+
+.time {
+	display: block;
+  order: 3;
+  font-size: 70%;
+  flex: 0 0 6ex;
+}
+.line:hover .time {
+	visibility: visible;
+}
+
+body.normal .sender {
+	display: block;
+	text-align: right;
+  flex: 0 0 15ex;
+}
+
+div.line[type=action] .sender[type=normal], div.line[type=action] .sender[type=myself] {
+	color: #8996A8;
+	background-color: transparent;
+}
+
+div.line[type=action] .sender[type=normal]::before, div.line[type=action] .sender[type=myself]::before {
+	content: "•";
+}
+
+.line[highlight=true] > .sender[type=normal] {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	line-height:3ex;
+	background-color: #3B434C;
+/*	background-color: #48515C;*/
+	color: #CF6A4C;
+}
+
+.sender[type=myself]:after {
+	content: " ★";
+	color: #6E7B8D;
+}
+
+.line[highlight=true] {
+  background-color: transparent;
+}
+
+/* disable funky mirc colours */
+
+.effect[color-number] { color: inherit; background-color: inherit; font-style: italic; }
+
+/* Icons/logos for some popular apps/channels */
+
+html[channelname="#limechat"].normal {
+	background: #272A36 url('Limelight/limechat.png') no-repeat fixed bottom right;
+}
+
+html[channelname="##textmate"].normal {
+	background: #272A36 url('Limelight/textmate.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#adium"].normal {
+	background: #272A36 url('Limelight/adium.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#colloquy"].normal {
+	background: #272A36 url('Limelight/colloquy.png') no-repeat fixed bottom right;
+}
+
+html[channelname="#growl"].normal {
+	background: #272A36 url('Limelight/growl.png') no-repeat fixed bottom right;
+}
+html[channelname="#ruby"].normal {
+	background: #272A36 url('Limelight/ruby.png') no-repeat fixed bottom right;
+}
+html[channelname="#rubyonrails"].normal {
+	background: #272A36 url('Limelight/rubyonrails.png') no-repeat fixed bottom right;
+}
+html[channelname="##apple"].normal {
+	background: #272A36 url('Limelight/apple.png') no-repeat fixed bottom right;
+}
+html[channelname="#python"].normal {
+	background: #272A36 url('Limelight/python.png') no-repeat fixed bottom right;
+}
+
